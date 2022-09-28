@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'Main_Database',
     'multiselectfield',
     'widget_tweaks',
-    'ckeditor'
+    'ckeditor',
     'whitenoise.runserver_nostatic',  
 ]
 
