@@ -2,7 +2,7 @@ from locale import currency
 from multiprocessing import context
 from django.shortcuts import render,redirect
 from . models import ActivityDetail, AddParticipant,Participant,Poll,Post
-from .forms import ParticipantForm,CreatePollForm,CreateActivityForm,CreateOrganizationForm,CreateProjectForm,CreateParrticipantForm
+from .forms import ParticipantForm,CreatePollForm,CreateActivityForm,CreateOrganizationForm,CreateProjectForm
 from django.views.generic import ListView,DetailView
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
