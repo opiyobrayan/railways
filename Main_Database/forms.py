@@ -43,10 +43,7 @@ class CreateActivityForm(forms.ModelForm):
     class Meta:
         model=ActivityDetail
         fields="__all__"
-class CreateParrticipantForm(forms.ModelForm):
-    class Meta:
-        model=Participant
-        fields="__all__"
+
 class CreateOrganizationForm(forms.ModelForm):
     class Meta:
         model=Organization
