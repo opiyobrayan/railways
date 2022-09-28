@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+</style>
+{% load static %}
+<center>
+    <img  src="{% static 'kelin.png' %}">
+</center>
+<br>
+<br>
+<div class="row">
+    <div class="column">
+        <div class="card" style="width: 30rem;">
+            <a href="#">
+                <div class="card-header">
+                <h1 class="text-center mt-2"><b>#</b> Grants in Total </h1>
+                </div>
+            </a>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#"><h3 class="text-center mt-2"> <b>#</b> In progress </h3></li></a>
+            <li class="list-group-item"><a href="#"><h3 class="text-center mt-2"><b>#</b> Completed </h3></li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card" style="width: 30rem;">
+            <a href="">
+                <div class="card-header">
+                <h1 class="text-center mt-2"><b>#</b> Activities in Total</h1>
+                </div>
+            </a>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>#</b> Trainings </h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> Workshops </h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> Meetings </h3></li></a>            
+            </ul>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card" style="width: 30rem;">
+            <a href="">
+                <div class="card-header">
+                <h1 class="text-center mt-2"><b>#</b> Participants</h1>
+                </div>
+            </a>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>#</b> Stakeholders</h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> Benificiaries</h3></li></a>           
+            </ul>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card" style="width: 30rem;">
+            <a href="">
+                <div class="card-header">
+                <h1 class="text-center mt-2"><b>#</b> Health Facilities</h1>
+                </div>
+            </a>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>#</b> Dispensaries</h3></li></a>
+                      
+            </ul>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card" style="width: 30rem;">
+            <a href="">
+                <div class="card-header">
+                <h1 class="text-center mt-2"><b>#</b> Participant Type</h1>
+                </div>
+            </a>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>#</b> Judges</h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> Lawyers</h3></li></a>  
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>#</b> Adolescent Ladies</h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> Elders</h3></li></a>  
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>#</b> Young Women</h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> Widows</h3></li></a> 
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>#</b> Doctors</h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> Nurses</h3></li></a>        
+            </ul>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card" style="width: 30rem;">
+            <a href="">
+                <div class="card-header">
+                <h1 class="text-center mt-2"><b>#</b> Organizations</h1>
+                </div>
+            </a>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>#</b> CBOs</h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> CSOs</h3></li></a> 
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> Women Groups</h3></li></a>    
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"><b>#</b> Youth Groups</h3></li></a>           
+            </ul>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card" style="width: 30rem;">
+            <a href="">
+                <div class="card-header">
+                <h1 class="text-center mt-2"><b>#</b> Health Facilities</h1>
+                </div>
+            </a>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>#</b> Dispensaries</h3></li></a>
+                      
+            </ul>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card" style="width: 30rem;">
+            <a href="">
+                <div class="card-header">
+                <h1 class="text-center mt-2"><b>5000</b> IEC Material</h1>
+                </div>
+            </a>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>1500</b> Books</h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>1500</b> Fliers</h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>500</b> Booklets</h3></li></a>
+            <li class="list-group-item"><a href=""><h3 class="text-center mt-2"> <b>1000</b> Posters</h3></li></a>      
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

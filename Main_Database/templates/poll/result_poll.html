@@ -1,0 +1,46 @@
+{% extends "poll/base.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Poll Result</h3>
+            </div>
+
+            <div class="panel-body">
+                <h3>{{ poll.question }}</h3>
+            </div>
+
+            <ul class="list-group">
+                {% if poll.option_one %}
+                <li class="list-group-item">{{ poll.option_one }} &mdash; <strong>{{ poll.option_one_count }}</strong></li>
+                {% endif %}
+                {% if poll.option_two %}
+                <li class="list-group-item">{{ poll.option_two }} &mdash; <strong>{{ poll.option_two_count }}</strong></li>
+                {% endif %}
+                {% if poll.option_three %}
+                <li class="list-group-item">{{ poll.option_three }} &mdash; <strong>{{ poll.option_three_count }}</strong></li>
+                {% endif %}
+                {% if poll.option_four %}
+                <li class="list-group-item">{{ poll.option_four }} &mdash; <strong>{{ poll.option_four_count }}</strong></li>
+                {% endif %}
+                {% if poll.option_five %}
+                <li class="list-group-item">{{ poll.option_five }} &mdash; <strong>{{ poll.option_five_count }}</strong></li>
+                {% endif %}
+                {% if poll.option_six %}
+                <li class="list-group-item">{{ poll.option_six }} &mdash; <strong>{{ poll.option_six_count }}</strong></li>
+                {% endif %}
+
+            </ul>
+
+            <div class="panel-footer">
+                Total &mdash; <strong>{{ poll.total }}</strong>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

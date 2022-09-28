@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="size">
+<div class="container">
+<h1>Participant list For: {{detail.activity_name}}</h1>
+
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+        
+        .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+    </style>
+    <div class="row">
+        <div class="column">
+            <button hx-get="{% url 'activity-form' %}" hx-swap="beforeend" hx-target="#activityform" class="btn btn-primary" >
+                Add Participant
+            </button>
+        </div>
+        <div class="column">
+        <div id="activityform">
+            {% for participant in participants %}
+            {% include 'activities_folder/partial/participant_detail.html' %}
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+{% endblock %}

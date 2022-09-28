@@ -1,0 +1,21 @@
+{% extends "articles/base.html" %}
+
+{% block title %}Article Page{% endblock %}
+
+{% block main %}
+
+<div class="row">
+    <div class="col-lg-9 col-lg-offset-2">
+        <div class="panel panel-default">
+            
+                <h3> Write an Artcle,or do Any Publication Here</h3>
+                
+                <form method="POST">
+                    {% csrf_token %}
+                    {{form.media}}
+                    {{form.as_p}}
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

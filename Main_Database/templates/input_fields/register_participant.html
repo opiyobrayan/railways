@@ -1,0 +1,50 @@
+{% extends "input_fields/base.html" %}
+{% load widget_tweaks %}
+
+{% block title %}Register Participant{% endblock %}
+
+{% block main %}
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default">
+            {% for i in alld %}
+                <!-- <table border = "5" cellpadding = "5" cellspacing = "5" bordercolor = "blue" bgcolor = "white" width ="25%" class="table table-striped">
+                    <tr>
+                        <th width="50px">Activity Name</th>
+                        <th  width="50px">add partcipant</th>
+                    </tr>
+                    <tr>
+                    <td>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="{% url 'add-participant' i.id %}"><h3> <b>{{i.activity_name}}</b></h3></li></a>
+                        </ul>
+                        </td>
+                    <td>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="{% url 'add-participant' i.id %}"> Add Partcipant</a></li>
+                        </ul>
+                    </td>
+                    <br>
+                    </tr>
+                </table> -->
+                <center>
+                <table border = "1" cellpadding = "5" cellspacing = "5" width="100%" class="table table-striped">
+                    <tr>
+                        <th width="100px">Activity Name</th>
+                        <th width="100px">Add partcipant</th>
+                    </tr>
+                    <tr>
+                    <td><a href="#"><h3> {{i.activity_name}}</h3></a></td>
+                    <td><a href="{% url 'add-participant' i.id %}"><h3> Add Participant</h3></a></td>
+                    </tr>
+                    
+                </table>
+                <br>
+                </center>
+                {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
