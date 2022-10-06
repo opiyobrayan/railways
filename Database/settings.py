@@ -134,4 +134,4 @@ STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS=['https://*.my-database.up.railway.app//']
+CSRF_TRUSTED_ORIGINS=['https://*kdds.up.railway.app//']
